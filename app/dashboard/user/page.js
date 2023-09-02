@@ -8,10 +8,6 @@ export default function Page() {
   const [showModal, setShowModal] = useState(false);
   const [editUser, setEditUser] = useState(null);
 
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
   useEffect(() => {
     const handleGetUser = async () => {
       try {
@@ -95,8 +91,12 @@ export default function Page() {
 
   return (
     <div className="container">
-      <h1>User managament page</h1>
-      <Link href="/">Go back home</Link>
+      <h1 className="text-light">User managament page</h1>
+      <div className="d-flex gap-3 mb-4">
+        <Link href="/dashboard/user">User</Link>
+        <Link href="/dashboard/employee">Employee</Link>
+        <Link href="/">Log out</Link>
+      </div>
       <div className="d-flex justify-content-center">
         <div className="card p-3" style={{ width: "900px" }}>
           <table className="table table-hover">

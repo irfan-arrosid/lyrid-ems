@@ -1,10 +1,10 @@
-import { Pool } from "pg";
+import mysql from "mysql";
 
-const connection = new Pool({
-  host: "localhost",
-  user: "irfanarrosid",
-  password: "at19ir97ar",
-  database: "lyrid_ems",
+const connection = mysql.createConnection({
+  host: "",
+  user: "",
+  password: "",
+  database: "",
 });
 
 connection.connect((err) => {

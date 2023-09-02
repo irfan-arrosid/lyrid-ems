@@ -22,7 +22,7 @@ export default function Page() {
         throw new Error("Sign-up failed");
       }
 
-      window.location.href = "/dashboard";
+      window.location.href = "/login";
     } catch (error) {
       console.error("Sign-up error:", error);
     }
